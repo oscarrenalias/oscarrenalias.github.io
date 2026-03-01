@@ -2,7 +2,7 @@
 title = "AI Coding Assistants: Beyond the Hype"
 date = 2025-11-27T00:00:00Z
 lastmod = 2025-11-30T00:00:00Z
-draft = true
+draft = false
 +++
 
 ## The Promise and Hype of AI Coding Assistants

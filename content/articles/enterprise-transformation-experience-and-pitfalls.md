@@ -1,7 +1,7 @@
 +++
 title = "Navigating the Challenges of Large Enterprise Transformations"
 date = 2026-02-26T00:00:00Z
-draft = true
+draft = false
 author = "Oscar Renalias"
 +++
 
