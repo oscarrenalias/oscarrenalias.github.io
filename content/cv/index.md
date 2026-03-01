@@ -8,15 +8,12 @@ title: "Curriculum Vitae"
 
 ## Contact
 
-- Email: <oscar@renalias.net>
-- Phone: +358 40 772 5915
-- Personal site: [renalias.net](https://renalias.net/)
-- GitHub: [oscarrenalias](https://github.com/oscarrenalias)
-- BlueSky:
-  [@oscarrenalias.bsky.social](https://bsky.app/profile/oscarrenalias.bsky.social)
-- Presentations: [SlideShare](https://slideshare.net/oscarrenalias),
-  [YouTube
-  playlist](https://www.youtube.com/playlist?list=PLtIcRO0wD_QJwC87r7sMHNtTAnMdKAASZ)
+|  |  |
+| --- | --- |
+| 15 June 1978 | [GitHub](https://github.com/oscarrenalias) |
+| [oscar@renalias.net](mailto:oscar@renalias.net) | [@oscarrenalias.bsky.social](https://bsky.app/profile/oscarrenalias.bsky.social) |
+| +358 40 772 5915 | [https://renalias.net](https://renalias.net/) |
+|  | [SlideShare](https://slideshare.net/oscarrenalias), [YouTube](https://www.youtube.com/playlist?list=PLtIcRO0wD_QJwC87r7sMHNtTAnMdKAASZ) |
 
 ## Profile
 
