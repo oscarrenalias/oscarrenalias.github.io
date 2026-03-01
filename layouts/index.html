@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="home-section">
-  <h3>Selected Articles</h3>
+  <h2>Selected Articles</h2>
   <ul class="entry-list">
     {{ range first 6 (where .Site.RegularPages "Section" "articles") }}
     <li>
@@ -12,7 +12,7 @@
 </section>
 
 <section class="home-section">
-  <h3>Talks & Presentations</h3>
+  <h2>Talks & Presentations</h2>
   <ul class="entry-list latest-talk-list">
     {{ $talksPage := .Site.GetPage "/talks" }}
     {{ if $talksPage }}

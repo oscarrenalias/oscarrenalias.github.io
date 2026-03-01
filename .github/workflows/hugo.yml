@@ -37,6 +37,28 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Setup TinyTeX
+        uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Render CV assets
+        run: |
+          quarto render content/cv/cv.qmd --to gfm -o content/cv/cv.generated.md
+          {
+            echo '---'
+            echo 'title: "Curriculum Vitae"'
+            echo '---'
+            echo
+            echo '&#x2B07; [PDF version](/cv/oscar-renalias-cv.pdf) | [Word version](/cv/oscar-renalias-cv.docx)'
+            echo
+            awk 'BEGIN{removed=0} !removed && /^# / {removed=1; next} {print}' content/cv/cv.generated.md
+          } > content/cv/index.md
+          rm -f content/cv/cv.generated.md
+          quarto render content/cv/cv.qmd --to pdf --output-dir static/cv --output oscar-renalias-cv.pdf
+          quarto render content/cv/cv.qmd --to docx --output-dir static/cv --output oscar-renalias-cv.docx
+
       - name: Build
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
