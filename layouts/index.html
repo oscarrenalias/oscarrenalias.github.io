@@ -13,14 +13,45 @@
 
 <section class="home-section">
   <h3>Talks & Presentations</h3>
-  <ul class="entry-list">
-    {{ range first 6 (where .Site.RegularPages "Section" "talks") }}
+  <ul class="entry-list latest-talk-list">
+    {{ $talksPage := .Site.GetPage "/talks" }}
+    {{ if $talksPage }}
+    {{ $firstMatch := findRE `(?m)^- \[[^\]]+\]\([^)]+\)` $talksPage.RawContent 1 }}
+    {{ if gt (len $firstMatch) 0 }}
+    {{ $latest := index $firstMatch 0 }}
+    {{ $latestTitle := replaceRE `^- \[([^\]]+)\]\([^)]+\)$` "$1" $latest }}
+    {{ $latestURL := replaceRE `^- \[[^\]]+\]\(([^)]+)\)$` "$1" $latest }}
+    {{ $videoID := "" }}
+    {{ $videoMatch := findRESubmatch `(?:youtube\.com/watch\?[^#\s]*v=|youtu\.be/|youtube\.com/shorts/|youtube\.com/live/|youtube\.com/embed/)([A-Za-z0-9_-]{11})` $latestURL 1 }}
+    {{ if gt (len $videoMatch) 0 }}
+    {{ $videoID = index (index $videoMatch 0) 1 }}
+    {{ end }}
     <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
+      {{ if ne $videoID "" }}
+      <p class="video-embed-title">{{ $latestTitle }}</p>
+      <div class="video-embed">
+        <iframe
+          src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $videoID | safeURL }}"
+          title="{{ printf "YouTube video: %s" $latestTitle }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="video-embed-link">
+        <a href="{{ $latestURL | safeURL }}">Watch on YouTube</a>
+      </p>
+      {{ else }}
+      <a href="{{ $latestURL }}">{{ $latestTitle }}</a>
+      {{ end }}
     </li>
     {{ end }}
+    {{ end }}
   </ul>
+  <p class="more-talks-link">
+    <a href="{{ "/talks/" | relURL }}">See more presentations</a>
+  </p>
 </section>
 
 {{ partial "contact-block.html" . }}

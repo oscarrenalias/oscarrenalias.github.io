@@ -1,0 +1,32 @@
+{{- $dest := .Destination -}}
+{{- $videoID := "" -}}
+{{- $matches := findRESubmatch `(?:youtube\.com/watch\?[^#\s]*v=|youtu\.be/|youtube\.com/shorts/|youtube\.com/live/|youtube\.com/embed/)([A-Za-z0-9_-]{11})` $dest 1 -}}
+{{- if gt (len $matches) 0 -}}
+  {{- $videoID = index (index $matches 0) 1 -}}
+{{- end -}}
+
+{{- if and (eq .Page.Section "talks") (ne $videoID "") -}}
+  {{- $label := .Text | plainify -}}
+  {{- $title := "YouTube video" -}}
+  {{- if ne $label "" -}}
+    {{- $title = printf "YouTube video: %s" $label -}}
+  {{- end -}}
+{{- if ne $label "" -}}
+<p class="video-embed-title">{{ .Text | safeHTML }}</p>
+{{- end -}}
+<div class="video-embed">
+  <iframe
+    src="{{ printf "https://www.youtube-nocookie.com/embed/%s" $videoID | safeURL }}"
+    title="{{ $title }}"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+<p class="video-embed-link">
+  <a href="{{ $dest | safeURL }}">Watch on YouTube</a>
+</p>
+{{- else -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

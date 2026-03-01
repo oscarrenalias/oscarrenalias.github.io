@@ -92,6 +92,63 @@
       list-style: none;
     }
     .entry-list li { margin: 0 0 0.55rem; }
+    .video-embed {
+      margin: 0.65rem 0 0.45rem;
+      border: 1px solid var(--surface-border);
+      border-radius: 0.6rem;
+      overflow: hidden;
+      background: #0a0f1a;
+    }
+    .site-main li:has(> .video-embed),
+    .site-main li:has(> .video-embed-title) {
+      list-style: none;
+      margin-left: -1.2rem;
+      margin-bottom: 1.25rem;
+    }
+    .latest-talk-list li:has(> .video-embed),
+    .latest-talk-list li:has(> .video-embed-title) {
+      margin-left: 0;
+    }
+    .video-embed-title {
+      margin: 0 0 0.45rem;
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      font-size: 1.02rem;
+      line-height: 1.35;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .video-embed iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      display: block;
+    }
+    .video-embed-link {
+      margin: 0 0 0.95rem;
+      font-size: 0.84rem;
+    }
+    .video-embed-link a {
+      display: inline-block;
+      border: 1px solid var(--surface-border);
+      border-radius: 999px;
+      padding: 0.16rem 0.62rem;
+      text-decoration: none;
+      color: var(--text-muted);
+    }
+    .video-embed-link a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .more-talks-link {
+      margin: 0.25rem 0 0;
+      font-size: 0.84rem;
+    }
+    .more-talks-link a {
+      color: var(--text-muted);
+    }
+    .more-talks-link a:hover {
+      color: var(--accent);
+    }
     .home-section {
       border-top: 1px solid var(--surface-border);
       padding-top: 1.45rem;
@@ -213,7 +270,7 @@
       <nav class="site-nav">
         <a href="{{ "/" | relURL }}">Home</a>
         <a href="{{ "/articles/" | relURL }}">Articles</a>
-        <a href="{{ "/talks/" | relURL }}">Talks</a>
+        <a href="{{ "/talks/" | relURL }}">Talks and Presentations</a>
       </nav>
       <hr>
     </header>
