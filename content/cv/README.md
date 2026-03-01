@@ -10,7 +10,10 @@ Run from repo root:
 
 ```bash
 # Generate Hugo page content from Quarto source
-quarto render content/cv/cv.qmd --to gfm -o content/cv/cv.generated.md
+(
+  cd content/cv
+  quarto render cv.qmd --to gfm --output cv.generated.md
+)
 {
   echo '---'
   echo 'title: "Curriculum Vitae"'
@@ -26,9 +29,11 @@ rm -f content/cv/cv.generated.md
 ## Downloadable artifacts
 
 ```bash
-# PDF download
-quarto render content/cv/cv.qmd --to pdf --output-dir static/cv --output oscar-renalias-cv.pdf
-
 # Word download
-quarto render content/cv/cv.qmd --to docx --output-dir static/cv --output oscar-renalias-cv.docx
+quarto render content/cv/cv.qmd --to docx --output oscar-renalias-cv.docx
+mkdir -p static/cv
+mv oscar-renalias-cv.docx static/cv/oscar-renalias-cv.docx
+
+# PDF download generated from the Word output
+soffice --headless --convert-to pdf --outdir static/cv static/cv/oscar-renalias-cv.docx
 ```

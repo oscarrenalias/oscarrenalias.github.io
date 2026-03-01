@@ -8,6 +8,9 @@ script = ""
 [[actions]]
 name = "Run"
 icon = "run"
-command = '''
-hugo server -D 
-'''
+command = "hugo server -D"
+
+[[actions]]
+name = "Generate CV"
+icon = "tool"
+command = "quarto render content/cv/cv.qmd --to docx --output-dir static/cv --output cv.docx"

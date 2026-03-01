@@ -24,11 +24,16 @@ Site is built on Hugo as a static site generator, deployed to GitHub pages via G
    ```bash
    brew install hugo
    ```
-2. Start the local dev server:
+2. Install Quarto (required for CV pre-build hook):
    ```bash
-   hugo server -D
+   brew install --cask quarto
    ```
-3. Open `http://localhost:1313`.
+3. Start the local dev server:
+   ```bash
+   chmod +x hugo-dev.sh
+   ./hugo-dev.sh server -D
+   ```
+4. Open `http://localhost:1313`.
 
 ## Write content
 

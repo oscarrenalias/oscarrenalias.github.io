@@ -1,6 +1,5 @@
 ---
 title: "Oscar Renalias - Curriculum Vitae"
-author: "Oscar Renalias"
 lang: en
 format:
   html:
@@ -24,7 +23,8 @@ format:
         \RedeclareSectionCommand[beforeskip=.55\baselineskip,afterskip=.2\baselineskip]{section}
         \RedeclareSectionCommand[beforeskip=.4\baselineskip,afterskip=.14\baselineskip]{subsection}
         \RedeclareSectionCommand[beforeskip=.3\baselineskip,afterskip=.1\baselineskip]{subsubsection}
-  docx: default
+  docx:
+    reference-doc: reference.docx
 execute:
   enabled: false
 ---
@@ -35,61 +35,69 @@ execute:
 - Phone: +358 40 772 5915
 - Personal site: [renalias.net](https://renalias.net/)
 - GitHub: [oscarrenalias](https://github.com/oscarrenalias)
-- X/Twitter: [@oscarrenalias](https://twitter.com/oscarrenalias)
+- BlueSky: [@oscarrenalias.bsky.social](https://bsky.app/profile/oscarrenalias.bsky.social)
 - Presentations: [SlideShare](https://slideshare.net/oscarrenalias), [YouTube playlist](https://www.youtube.com/playlist?list=PLtIcRO0wD_QJwC87r7sMHNtTAnMdKAASZ)
 
 ## Profile
 
-Experienced technology architect with deep expertise in cloud transformation and enterprise architecture, with a proven track record delivering end-to-end transformations in complex environments.
+Experienced technology architect with deep expertise in cloud transformation and enterprise architecture, with a proven 
+track record delivering end-to-end transformations in complex environments.
 
-As a technology leader, I define strategy and shape solutions across the enterprise. I have supported large clients across industries through all transformation phases: vision, business case, roadmap, and execution.
+As a technology leader, I define strategy and shape solutions across the enterprise, and I have worked and led large clients 
+across industries through complex enterprise and cloud transformations from vision, business case, estimation, roadmap, and delivery.
 
-My breadth of experience spans enterprise architecture strategy, application portfolio modernization, cloud transformation execution, and detailed solution delivery across SAP, custom software engineering, SaaS, security, and infrastructure.
-
-As a Managing Director, I lead senior architecture teams delivering enterprise architecture and cloud transformation across Europe and the Nordics, with sustained business growth over time. I also own global Accenture technology and cloud offerings, guiding investments, innovation, and accelerator development.
-
-I am part of a select group of fewer than 150 Accenture professionals globally granted the title of Master Technology Architect.
+My experience spans from the portfolio at enterprise architecture level, all the way to specialized technologies and platforms, as well as 
+application transformation and modernization, transformation execution, and detailed solution delivery across SAP, custom software engineering, 
+SaaS, security, and infrastructure.
 
 ## Experience
 
+#### 04/2007 - Present
 ### Managing Director, Master Technology Architect, Accenture
-*04/2007 - Present*
 
+- As a Managing Director, I lead senior teams of experts delivering architecture and enterprise transformation across Europe and 
+Nordics, with sustained business growth over time. 
+- I am also responsible for the Technology Consulting group wtihin Accenture Technology in Nordics, leading over 90 experts driving 
+consulting and advisory engagements with clients.
+- My technology experience and expertise has been recognized internally as part of the Master Technology Architect program, where 
+I am part of a select group of fewer than 200 Accenture senior architects globally.
+
+#### 12/2003 - 04/2007
 ### Configuration Owner, Nokia Oyj, Finland
-*12/2003 - 04/2007*
 
 - Designed and implemented software configuration management processes, including version control and documentation workflows.
 - Reduced version control issues compared to the previous process.
 - Implemented system-level integration between the project e-procurement tool and SAP.
 - Integrated build and continuous integration systems and developed automated deployment tooling for development and test environments.
 
+#### 09/2001 - 03/2003
 ### Product Engineer, Codetoys Oy, Finland
-*09/2001 - 03/2003*
 
 - Provided pre-sales and post-sales support for an in-house wireless multimedia platform.
 - Contributed to project delivery for international operator customers, including platform configuration and installation.
 
-### Trainer, University-Project Enterprise (PUE), Spain
-*03/2001 - 07/2001*
+#### 03/2001 - 07/2001 
+### Expert Technical Trainer, University-Project Enterprise (PUE), Spain
 
 - Delivered UNIX and Linux training.
 
+#### 09/1999 - 07/2001
 ### Unix Systems Administrator, Faculty of Computer Science of Barcelona (FIB), Spain
-*09/1999 - 07/2001*
 
 - Managed UNIX systems and network administration and maintenance.
 
 ## Education
 
+#### 09/2001
 ### B.Sc. Computer Science, Faculty of Computer Science of Barcelona (FIB)
-*09/1995*
 
 Specialization in Networks and Operating Systems.
 
+#### 09/2001
 ### Exchange Student, Finland
-*09/2001*
 
-Development of final year thesis.
+Development of final year thesis: *Suitability of voice technologies for mobile gaming applications*. Analysis and exploration 
+of voice input methods for multimedia applications.
 
 ## Presentations, Patents, and Open Source Contributions
 
@@ -117,10 +125,6 @@ Development of final year thesis.
 - [OpenSlava 2013 - Dynamic Languages](http://www.slideshare.net/oscarrenalias/open-slava-2013-dynamic-languagesfinal)
 - [WJAX Munich - Asynchronous web applications with Play Framework 2.0](http://www.slideshare.net/oscarrenalias/asynchronous-web-apps-with-play-framework-20-15060448)
 - [Unlocking value in (big) data](http://www.slideshare.net/oscarrenalias/unlocking-value-in-your-big-data)
-
-### Other project work
-
-- *09/2001 - 04/2003:* Suitability of voice technologies for mobile gaming applications. Analysis and exploration of voice input methods for multimedia applications (final year project).
 
 ## Training and Certifications
 
