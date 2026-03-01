@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article>
+  <h2>{{ .Title }}</h2>
+  {{ if or .Params.author (or (not .Date.IsZero) .Params.lastmod) }}
+  <div class="article-meta">
+    {{ with .Params.author }}
+    <div class="meta meta-author">By {{ . }}</div>
+    {{ end }}
+    {{ if or (not .Date.IsZero) .Params.lastmod }}
+    <div class="meta meta-dates">
+      {{ if not .Date.IsZero }}
+      <span>Published on {{ .Date.Format "January 2, 2006" }}</span>
+      {{ end }}
+      {{ with .Params.lastmod }}
+      <span>Last updated on {{ dateFormat "January 2, 2006" . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ with .Params.context }}
+  <p class="meta">{{ . }}</p>
+  {{ end }}
+  {{ if and (eq .Section "articles") (gt (len .Fragments.Headings) 0) }}
+  <aside class="toc">
+    <h3>Table of Contents</h3>
+    {{ .TableOfContents }}
+  </aside>
+  {{ end }}
+  {{ .Content }}
+  {{ if eq .Section "articles" }}
+  {{ partial "contact-block.html" . }}
+  {{ end }}
+</article>
+{{ end }}

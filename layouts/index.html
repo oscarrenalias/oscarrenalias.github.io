@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="home-section">
+  <h3>Selected Articles</h3>
+  <ul class="entry-list">
+    {{ range first 6 (where .Site.RegularPages "Section" "articles") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="home-section">
+  <h3>Talks & Presentations</h3>
+  <ul class="entry-list">
+    {{ range first 6 (where .Site.RegularPages "Section" "talks") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ partial "contact-block.html" . }}
+{{ end }}

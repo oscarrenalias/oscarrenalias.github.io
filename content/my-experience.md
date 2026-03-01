@@ -1,0 +1,5 @@
+Enterprise architect and global leader in cloud-native and AI-driven transformations, one of <200 Master Technology Architects worldwide at Accenture, specializing in portfolio-level and enterprise transformation, from roadmapping to delivery for complex, regulated industries such as financial services, transportation and travel.
+
+Over the last few years, I have spearheaded the technology transformation for Air France-KLM's multi-year cloud journey migrating from proprietary data centers to cloud for    real-time insights, agility, AI efficiencies, and operational resilience, and earlier Finnish Railways (VR Group), modernizing reservation/commuter apps with Docker Enterprise, achieving 50% cost savings, standardized pipelines, and vendor-agnostic platforms.
+
+In addition to delivery resp onsibilities, I am currently leading Accenture's Consulting group within Accenture Technology for Nordics, managing ~90 senior practitioners delivering high-impact technology consulting and advisory work; also own global cloud offerings, driving investments, innovation accelerators, and business growth across Nordics and Europe.

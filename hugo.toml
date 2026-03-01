@@ -1,0 +1,7 @@
+baseURL = "https://renalias.net/"
+languageCode = "en-us"
+title = "Oscar Renalias"
+enableRobotsTXT = true
+
+[params]
+  description = "Concise hub for leadership, delivery, and technology transformation work."

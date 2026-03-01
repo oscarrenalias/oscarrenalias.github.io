@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0e14;
+      --surface: #121826;
+      --surface-border: #273247;
+      --text: #e9eef7;
+      --text-muted: #a8b3c7;
+      --accent: #7cc7ff;
+      --accent-soft: #223958;
+      --content-width: 72ch;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+      font-size: 15.3px;
+      line-height: 1.8;
+    }
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:hover { text-decoration-thickness: 0.14em; }
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4.5rem;
+    }
+    .site-header h1 {
+      margin: 0 0 0.9rem;
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      font-size: clamp(1.7rem, 3.4vw, 2.45rem);
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      font-weight: 600;
+    }
+    .site-header h1 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .intro {
+      color: var(--text-muted);
+      max-width: var(--content-width);
+      margin-bottom: 1.25rem;
+    }
+    .intro p { margin: 0 0 0.9rem; }
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.65rem;
+      margin-bottom: 1.8rem;
+      padding-top: 0.2rem;
+    }
+    .site-nav a {
+      display: inline-block;
+      padding: 0.2rem 0.58rem;
+      border-radius: 999px;
+      border: 1px solid var(--surface-border);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.81rem;
+    }
+    .site-nav a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .site-main {
+      max-width: var(--content-width);
+    }
+    h2, h3 {
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      line-height: 1.2;
+      font-weight: 600;
+      margin: 0 0 0.65rem;
+    }
+    h2 { font-size: clamp(1.45rem, 1.95vw, 1.87rem); }
+    h3 { font-size: clamp(1.1rem, 1.7vw, 1.45rem); margin-top: 2.7rem; }
+    p, ul { margin: 0 0 1rem; }
+    ul { padding-left: 1.2rem; }
+    .entry-list {
+      padding: 0;
+      list-style: none;
+    }
+    .entry-list li { margin: 0 0 0.55rem; }
+    .home-section {
+      border-top: 1px solid var(--surface-border);
+      padding-top: 1.45rem;
+      margin-top: 2.5rem;
+    }
+    .home-section:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .contact-block {
+      margin-top: 3.4rem;
+      padding-top: 1.45rem;
+      text-align: left;
+    }
+    .contact-block p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .social-links {
+      display: flex;
+      justify-content: flex-start;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .social-links a {
+      width: 2.15rem;
+      height: 2.15rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      border: 1px solid var(--surface-border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--surface);
+    }
+    .social-links a:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .social-links svg {
+      width: 1.05rem;
+      height: 1.05rem;
+      fill: currentColor;
+    }
+    .social-links .social-icon-img {
+      width: 1.85rem;
+      height: 1.85rem;
+      display: block;
+      object-fit: contain;
+    }
+    .social-links .cv-link {
+      width: auto;
+      padding: 0 0.65rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+    }
+    small, .meta {
+      color: var(--text-muted);
+      font-size: 0.73rem;
+    }
+    .article-meta {
+      margin: -0.15rem 0 0.8rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+    .meta-author {
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .meta-dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.85rem;
+      line-height: 1.35;
+    }
+    pre, code {
+      background: #111623;
+      border-radius: 0.3rem;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.9em;
+    }
+    pre { padding: 0.75rem; overflow-x: auto; }
+    code { padding: 0.08rem 0.25rem; }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--surface-border);
+      margin: 0 0 1.9rem;
+    }
+    @media (max-width: 640px) {
+      body { font-size: 14.5px; }
+      .page { padding-top: 2.2rem; }
+      .site-nav { margin-bottom: 1.3rem; }
+      h3 { margin-top: 2.4rem; }
+      .home-section {
+        margin-top: 2.1rem;
+        padding-top: 1.2rem;
+      }
+      .contact-block {
+        margin-top: 2.6rem;
+        padding-top: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+      {{ if .IsHome }}
+      <div class="intro">{{ .Content }}</div>
+      {{ end }}
+      <nav class="site-nav">
+        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "/articles/" | relURL }}">Articles</a>
+        <a href="{{ "/talks/" | relURL }}">Talks</a>
+      </nav>
+      <hr>
+    </header>
+    <main class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>
