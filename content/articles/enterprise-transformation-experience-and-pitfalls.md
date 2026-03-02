@@ -3,6 +3,8 @@ title = "Navigating the Challenges of Large Enterprise Transformations"
 date = 2026-02-26T00:00:00Z
 draft = false
 author = "Oscar Renalias"
+header_image = "/images/articles/enterprise-transformation-experience-and-pitfalls.png"
+header_image_alt = "Leadership team aligning on enterprise transformation roadmap and migration progress"
 +++
 
 Enterprise transformations matter. They are a how organizations respond to cost pressure, modernization needs, speed, or at times, survival. However, large enterprise transformations are rarely linear. Plans will change, assumptions will no longer hold true and risks will eventually materialize. If you’ve led or been part of large migrations, you already know this.

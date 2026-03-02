@@ -21,11 +21,16 @@
   {{ with .Params.context }}
   <p class="meta">{{ . }}</p>
   {{ end }}
+  {{ with .Params.header_image }}
+  <img src="{{ . | relURL }}" alt="{{ $.Params.header_image_alt | default $.Title }}" loading="eager" decoding="async">
+  {{ end }}
   {{ if and (eq .Section "articles") (gt (len .Fragments.Headings) 0) }}
-  <aside class="toc">
-    <h3>Table of Contents</h3>
-    {{ .TableOfContents }}
-  </aside>
+  <details class="toc">
+    <summary>Table of Contents</summary>
+    <div class="toc-content">
+      {{ .TableOfContents }}
+    </div>
+  </details>
   {{ end }}
   {{ .Content }}
   {{ if eq .Section "articles" }}
