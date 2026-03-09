@@ -6,31 +6,32 @@ title: "Curriculum Vitae"
 
 
 
-## Contact
-
 |  |  |
-| --- | --- |
+|----|----|
 | 15 June 1978 | [GitHub](https://github.com/oscarrenalias) |
-| [oscar@renalias.net](mailto:oscar@renalias.net) | [@oscarrenalias.bsky.social](https://bsky.app/profile/oscarrenalias.bsky.social) |
-| +358 40 772 5915 | [https://renalias.net](https://renalias.net/) |
-|  | [SlideShare](https://slideshare.net/oscarrenalias), [YouTube](https://www.youtube.com/playlist?list=PLtIcRO0wD_QJwC87r7sMHNtTAnMdKAASZ) |
+| <oscar@renalias.net> | [@oscarrenalias.bsky.social](https://bsky.app/profile/oscarrenalias.bsky.social) |
+| +358 40 772 5915 | [renalias.net](https://renalias.net/) |
+|  | Presentations: [SlideShare](https://slideshare.net/oscarrenalias), [YouTube playlist](https://www.youtube.com/playlist?list=PLtIcRO0wD_QJwC87r7sMHNtTAnMdKAASZ) |
 
 ## Profile
 
-Experienced technology architect with deep expertise in cloud
-transformation and enterprise architecture, with a proven track record
-delivering end-to-end transformations in complex environments.
+Senior technology leader and experienced technology architect with
+proven expertise in cloud-native transformations and enterprise
+architecture across aviation (Air France-KLM cloud transformation
+2021-2026), rail (Finnish Railways sales systems migration to cloud
+2016-2018), financial services/banking strategies and transformations.
 
-As a technology leader, I define strategy and shape solutions across the
-enterprise, and I have worked and led large clients across industries
-through complex enterprise and cloud transformations from vision,
-business case, estimation, roadmap, and delivery.
+Pragmatic leader, I go from portfolio and strategy to delivery: define
+vision/roadmaps, solutioning and architecture, lead teams (onshore,
+offshore) on complex projects, manage portfolios (planning/financials),
+and dive into technical details in cloud-native, open source
+technologies, as well as SAP ecosystems. I make sure that visions and
+strategies can be executed, and deliver them myself.
 
-My experience spans from the portfolio at enterprise architecture level,
-all the way to specialized technologies and platforms, as well as
-application transformation and modernization, transformation execution,
-and detailed solution delivery across SAP, custom software engineering,
-SaaS, security, and infrastructure.
+Fluent with GenAI, skilled in LLM agents and applying them to project
+delivery as well as consulting work to accelerate outcomes with nearly
+1,000 hours saved, enhancing efficiency and quality of strategic
+advisory.
 
 ## Experience
 
@@ -38,27 +39,37 @@ SaaS, security, and infrastructure.
 
 ### Managing Director, Master Technology Architect, Accenture
 
-- As a Managing Director, I lead senior teams of experts delivering
-  architecture and enterprise transformation across Europe and Nordics,
-  with sustained business growth over time.
-- I am also responsible for the Technology Consulting group wtihin
-  Accenture Technology in Nordics, leading over 90 experts driving
-  consulting and advisory engagements with clients.
-- My technology experience and expertise has been recognized internally
-  as part of the Master Technology Architect program, where I am part of
-  a select group of fewer than 200 Accenture senior architects globally.
+- Responsible for technology architecture and delivery teams in
+  large-scale cloud enterprise transformations, including Air
+  France-KLM’s multi-year migration as Lead Architect, with over 350
+  applications migrated from legacy data centers to cloud. Delivered
+  business case via cost reductions, efficiency improvements, and
+  enhanced resilience across passenger, cargo, and maintenance
+  operations, and led a traditional organization through the challenges
+  of such a large scale endeavour.
+- Strategically introduced AI agents in projects to optimize delivery
+  processes, saving nearly 1,000 hours across workflows in a specific
+  engagement.
+- Lead Technology Consulting group within Accenture Technology Nordics
+  (distinct from Strategy), directing 90+ senior experts who advise from
+  proven delivery experience for credible client engagements across the
+  Nordics.
+- Certified Master Technology Architect, one of fewer than 200 worldwide
+  in Accenture’s pinnacle program validating leadership in complex
+  enterprise and cloud transformations.
 
 #### 12/2003 - 04/2007
 
 ### Configuration Owner, Nokia Oyj, Finland
 
 - Designed and implemented software configuration management processes,
-  including version control and documentation workflows.
-- Reduced version control issues compared to the previous process.
-- Implemented system-level integration between the project e-procurement
-  tool and SAP.
-- Integrated build and continuous integration systems and developed
-  automated deployment tooling for development and test environments.
+  including version control and documentation workflows for a core
+  internal application.
+- Reduced version control issues by integrating build and continuous
+  integration systems and developed automated deployment tooling for
+  development and test environments.
+- Designed and implemented system-level integration between the project
+  e-procurement tool and SAP.
 
 #### 09/2001 - 03/2003
 
@@ -73,7 +84,7 @@ SaaS, security, and infrastructure.
 
 ### Expert Technical Trainer, University-Project Enterprise (PUE), Spain
 
-- Delivered UNIX and Linux training.
+- Delivered UNIX and Linux training for technical and IT audiences
 
 #### 09/1999 - 07/2001
 
@@ -148,18 +159,19 @@ methods for multimedia applications.
 - *06/2009:* SAP SAPTEC - Fundamentals of SAP NetWeaver Application
   Server
 - *12/2007:* SAP BIT400 - SAP Exchange Infrastructure
-- *05/2006:* Software Configuration Management Workshop (Kasse
-  Initiatives LLC), 3-day workshop on implementing successful software
-  quality processes.
 
 ## Technical Competences
 
-- Containerization technologies: Docker, Mesos/Mesosphere, Kubernetes
-- Microservices: design, implementation, and operations
-- Languages: Java, JavaScript, PHP, Python, Ruby, UNIX shell scripting,
-  SQL, ABAP
-- Frameworks: Spring Boot, Node.js, JEE
-- DevOps: end-to-end knowledge of DevOps practices, processes, and tools
+- **Cloud & Orchestration**: Kubernetes and containers, app migration
+  and modernization, Azure
+- **Microservices/Architecture**: Design, delivery, resilience testing
+- **AI/GenAI**: agent development (LangChain/LangGraph), LLMs and
+  inference (OpenAI, Copilot)
+- **Languages**: JavaScript/Node.js, Python, Java, shell scripting
+- **DevOps/CI/CD**: GitHub, end-to-end pipelines, config management,
+  automated deployments
+- **Open Source Leadership**: LifeType, GitHub (93 repos)
+- **Enterprise Frameworks**: TOGAF
 
 ## Languages
 
