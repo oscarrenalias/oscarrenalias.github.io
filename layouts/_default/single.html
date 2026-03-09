@@ -1,6 +1,22 @@
 {{ define "main" }}
 <article>
+  {{ if eq .Section "articles" }}
+  {{ $headerImage := .Params.header_image }}
+  {{ if not $headerImage }}
+  {{ errorf "Article %q is missing required front matter param 'header_image'" .File.Path }}
+  {{ end }}
+  <div class="article-hero">
+    <img src="{{ $headerImage | relURL }}" alt="{{ .Params.header_image_alt | default .Title }}" loading="eager" decoding="async">
+    <div class="article-hero-overlay">
+      <h1 class="article-hero-title">{{ .Title }}</h1>
+    </div>
+  </div>
+  {{ else }}
   <h2>{{ .Title }}</h2>
+  {{ with .Params.header_image }}
+  <img src="{{ . | relURL }}" alt="{{ $.Params.header_image_alt | default $.Title }}" loading="eager" decoding="async">
+  {{ end }}
+  {{ end }}
   {{ if or .Params.author (or (not .Date.IsZero) .Params.lastmod) }}
   <div class="article-meta">
     {{ with .Params.author }}
@@ -20,9 +36,6 @@
   {{ end }}
   {{ with .Params.context }}
   <p class="meta">{{ . }}</p>
-  {{ end }}
-  {{ with .Params.header_image }}
-  <img src="{{ . | relURL }}" alt="{{ $.Params.header_image_alt | default $.Title }}" loading="eager" decoding="async">
   {{ end }}
   {{ if and (eq .Section "articles") (gt (len .Fragments.Headings) 0) }}
   <details class="toc">

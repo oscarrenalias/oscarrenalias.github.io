@@ -3,6 +3,8 @@ title = "AI Coding Assistants: Beyond the Hype"
 date = 2025-11-27T00:00:00Z
 lastmod = 2025-11-30T00:00:00Z
 draft = false
+header_image = "/images/articles/ai-coding-assistants-beyond-the-hype.png"
+header_image_alt = "AI-assisted software development workflow visualization"
 +++
 
 ## The Promise and Hype of AI Coding Assistants
