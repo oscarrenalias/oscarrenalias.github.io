@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <style>
@@ -84,17 +84,17 @@
       max-width: var(--content-width);
     }
     h2, h3 {
-      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
       line-height: 1.2;
       font-weight: 400;
       margin: 0 0 0.65rem;
       letter-spacing: -0.04em;
     }
     h2 {
-      font-size: clamp(1.45rem, 1.95vw, 1.87rem);
+      font-size: clamp(1.2rem, 1.65vw, 1.55rem);
       color: var(--heading-2);
     }
-    h3 { font-size: clamp(1.1rem, 1.7vw, 1.45rem); margin-top: 2.7rem; }
+    h3 { font-size: clamp(1rem, 1.4vw, 1.2rem); margin-top: 2.7rem; }
     p, ul { margin: 0 0 1rem; }
     ul { padding-left: 1.2rem; }
     .entry-list {
