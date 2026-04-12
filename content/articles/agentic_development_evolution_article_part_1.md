@@ -5,7 +5,6 @@ draft = false
 header_image = "/images/articles/agentic-development-evolution-article-part-1.png"
 header_image_alt = "AI-assisted software development workflow visualization"
 +++
-# From Coding Assistants to Autonomous Software Engineering (Part 1)
 
 ## Executive summary
 

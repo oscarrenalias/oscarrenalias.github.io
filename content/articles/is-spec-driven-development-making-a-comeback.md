@@ -2,7 +2,7 @@
 title = "Is spec-driven development becoming relevant again?"
 date = 2026-04-10T00:00:00Z
 draft = false
-header_image = "/images/articles/agentic-development-evolution-article-part-1.png"
+header_image = "/images/articles/is-spec-driven-development-making-a-comeback   .png"
 header_image_alt = "AI-assisted software development workflow visualization"
 +++
 
