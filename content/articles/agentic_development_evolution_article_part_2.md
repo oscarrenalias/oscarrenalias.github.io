@@ -1,6 +1,6 @@
 +++
 title = "From Coding Assistants to Autonomous Software Engineering (Part 2): Takt"
-date = 2026-04-08T00:00:00Z
+date = 2026-04-13T00:00:00Z
 draft = false
 header_image = "/images/articles/takt-hero.png"
 header_image_alt = "AI-assisted software development workflow visualization"
@@ -19,7 +19,7 @@ This article introduces an opinionated approach to addressing the limitations of
 
 Now that agents with 1M token contexts can take care of most enterprise codebases, enterprises need better harnesses.
 
-[Takt](https://github.com/oscarrenalias/takt) takes its name from the Six Sigma concept of Takt Time — the controlled cadence that keeps production moving at a sustainable, repeatable pace. The goal is the same: a harness designed to make agentic delivery more disciplined, traceable, and repeatable. It addresses the gaps outlined in Part 1 through structured workflow enforcement, bead-based decomposition, specialized workers, Git-native isolation, self-healing follow-up, and stronger visibility into what agents did and why.
+[Takt](https://github.com/oscarrenalias/takt) takes its name from the Six Sigma concept of Takt Time — the controlled cadence that keeps production moving at a sustainable, repeatable pace. The goal is the same: a harness designed to make agentic delivery more disciplined, traceable, and repeatable. It addresses the gaps outlined in [Part 1](/articles/agentic_development_evolution_article_part_1/) through structured workflow enforcement, bead-based decomposition, specialized workers, Git-native isolation, self-healing follow-up, and stronger visibility into what agents did and why.
 
 ### The design principles behind Takt
 
