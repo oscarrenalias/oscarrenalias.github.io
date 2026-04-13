@@ -322,6 +322,18 @@
       border: 1px solid var(--surface-border);
       border-radius: 0.6rem;
     }
+    .site-main figure {
+      margin: 1.1rem 0 1.35rem;
+    }
+    .site-main figure img {
+      margin: 0;
+    }
+    .site-main figcaption {
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      font-style: italic;
+      color: var(--text-muted);
+    }
     .site-main .article-hero img {
       height: 100%;
       min-height: inherit;
@@ -384,5 +396,7 @@
       {{ block "main" . }}{{ end }}
     </main>
   </div>
+  <script src="/js/medium-zoom.min.js"></script>
+  <script>mediumZoom('figure img', { background: '#0b0e14' })</script>
 </body>
 </html>
