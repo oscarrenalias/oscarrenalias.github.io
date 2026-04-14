@@ -5,7 +5,7 @@ lastmod = 2025-11-30T00:00:00Z
 draft = false
 header_image = "/images/articles/ai-coding-assistants-beyond-the-hype.png"
 header_image_alt = "AI-assisted software development workflow visualization"
-description = "AI coding assistants are genuinely accelerating development, but celebrating the percentage of AI-generated code misses the point. The real value lies in elevating engineers from code writers to system architects and quality guardians."
+description = "Celebrating % of AI-generated code misses the point. The real value is elevating engineers from code writers to quality guardians."
 +++
 
 ## The Promise and Hype of AI Coding Assistants

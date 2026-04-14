@@ -1,6 +1,6 @@
 +++
 title = "From Coding Assistants to Autonomous Software Engineering (Part 2): Takt"
-description = "Introduces Takt, an opinionated agentic delivery harness built on structured workflow enforcement, bead-based task decomposition, specialized workers, and Git-native isolation to make autonomous software engineering more disciplined and repeatable."
+description = "Introducing Takt: an opinionated harness for agentic delivery built on workflow enforcement, bead decomposition, and Git-native isolation."
 date = 2026-04-13T00:00:00Z
 draft = false
 header_image = "/images/articles/takt-hero.png"

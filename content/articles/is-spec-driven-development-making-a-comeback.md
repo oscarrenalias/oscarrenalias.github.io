@@ -4,7 +4,7 @@ date = 2026-04-10T00:00:00Z
 draft = false
 header_image = "/images/articles/is-spec-driven-development-making-a-comeback.png"
 header_image_alt = "AI-assisted software development workflow visualization"
-description = "As software delivery becomes more agentic, lightweight specifications are regaining value as a durable coordination layer between humans and agents. Dialogue-driven and spec-driven approaches don't compete — they complement each other."
+description = "Lightweight specs are regaining value as agentic delivery grows — a durable coordination layer between humans and agents."
 +++
 
 ## In the age of agentic systems, specs matter again

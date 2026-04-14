@@ -5,7 +5,7 @@ draft = false
 author = "Oscar Renalias"
 header_image = "/images/articles/enterprise-transformation-experience-and-pitfalls.png"
 header_image_alt = "Leadership team aligning on enterprise transformation roadmap and migration progress"
-description = "Large enterprise transformations rarely fail because of technology — they fail because of weak governance, misaligned stakeholders, and inconsistent execution. A look at the most common patterns and the practical measures that make the difference."
+description = "Large enterprise transformations fail not on technology but on governance, alignment, and execution. Patterns and practical fixes."
 +++
 
 Enterprise transformations matter. They are a how organizations respond to cost pressure, modernization needs, speed, or at times, survival. However, large enterprise transformations are rarely linear. Plans will change, assumptions will no longer hold true and risks will eventually materialize. If you’ve led or been part of large migrations, you already know this.
