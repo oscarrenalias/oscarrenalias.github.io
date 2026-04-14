@@ -4,6 +4,7 @@ date = 2026-04-08T00:00:00Z
 draft = false
 header_image = "/images/articles/agentic-development-evolution-article-part-1.png"
 header_image_alt = "AI-assisted software development workflow visualization"
+description = "Software development has evolved from AI autocomplete to agents that plan and execute across entire codebases — yet enterprises still face critical gaps in workflow enforcement, memory, and traceability. An examination of the evolution and what it means for enterprise adoption."
 +++
 
 ## Executive summary
