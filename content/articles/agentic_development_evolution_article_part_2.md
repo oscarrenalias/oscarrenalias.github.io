@@ -48,7 +48,7 @@ While the outer loop isn't necessarily required since Takt can be operated by a 
 
 In Takt, the bead is the core unit of orchestration. Instead of treating a feature or change request as one broad task, Takt breaks it into smaller, explicit beads that can be scheduled, assigned, tracked, and verified independently.
 
-{{< figure src="/images/articles/takt-bead-graph.png" caption="Bead dependency graph for a typical feature" >}}
+{{< figure src="/images/articles/takt-planner.png" caption="Bead decomposition for a typical feature, in something else I'm working on" >}}
 
 Each bead has a clear purpose, a bounded scope, and a defined place in the workflow. Beads can depend on earlier beads, generate new beads when follow-up is needed, and move through the system with their status visible at each step. This gives Takt a practical way to enforce progress: large work is reduced to a graph of manageable units, and the system advances that graph in a controlled, traceable manner rather than relying on a single agent to hold the entire task together.
 
